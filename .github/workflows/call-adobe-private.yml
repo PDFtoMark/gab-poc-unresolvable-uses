@@ -1,0 +1,5 @@
+name: call adobe private
+on: push
+jobs:
+  call:
+    uses: Adobe-Enterprise-Docs/workflows/.github/workflows/validate-articles.yml@main
