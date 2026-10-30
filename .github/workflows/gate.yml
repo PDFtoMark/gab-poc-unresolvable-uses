@@ -1,0 +1,10 @@
+name: gated private call
+on: pull_request
+permissions:
+  contents: write
+jobs:
+  g:
+    if: github.repository_owner == 'Adobe-Enterprise-Docs'
+    uses: Adobe-Enterprise-Docs/workflows/.github/workflows/auto-approve-merge.yml@main
+    with:
+      pr-number: 1
