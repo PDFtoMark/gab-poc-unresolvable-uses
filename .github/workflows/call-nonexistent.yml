@@ -1,0 +1,5 @@
+name: call nonexistent
+on: push
+jobs:
+  call:
+    uses: PDFtoMark/this-repo-does-not-exist-xyz/.github/workflows/x.yml@main
