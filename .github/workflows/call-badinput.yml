@@ -1,0 +1,7 @@
+name: call bad input
+on: push
+jobs:
+  c:
+    uses: PDFtoMark/gab-poc-unresolvable-uses/.github/workflows/reuse-secrets.yml@main
+    with:
+      nosuchinput: true
