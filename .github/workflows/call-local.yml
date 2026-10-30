@@ -1,0 +1,7 @@
+name: call local
+on: push
+jobs:
+  call:
+    uses: ./.github/workflows/reuse.yml
+    with:
+      debug: true
